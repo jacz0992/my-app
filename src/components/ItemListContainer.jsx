@@ -3,6 +3,7 @@ import { getPlayers } from '../utils/getItems';
 import PlayersList from './ItemList';
 
 
+
 const PlayersListContainer = () => {
   const [players, setPlayers] = useState([]);
   
@@ -16,7 +17,7 @@ const PlayersListContainer = () => {
 
   return (
     <>
-      <h1>PlayersListContainer</h1>
+      <h1>Lista de productos:</h1>
       <PlayersList players={players} />
     </>
   );

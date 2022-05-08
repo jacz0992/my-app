@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CartWidget from './CartWidget'
 
 const navbar = () => {
@@ -26,7 +27,7 @@ const navbar = () => {
       <div class="mt-2">
         <div class="border-b border-gray-200">
           <div class="-mb-px flex px-4 space-x-8" aria-orientation="horizontal" role="tablist">
-            <button id="tabs-1-tab-1" class="text-gray-900 border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium" aria-controls="tabs-1-panel-1" role="tab" type="button">Ropa</button>
+            <button id="tabs-1-tab-1" class="text-gray-900 border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium" aria-controls="tabs-1-panel-1" role="tab" type="button">Ropas</button>
             <button id="tabs-1-tab-2" class="text-gray-900 border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium" aria-controls="tabs-1-panel-2" role="tab" type="button">Juguetes</button>
             <button id="tabs-1-tab-2" class="text-gray-900 border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium" aria-controls="tabs-1-panel-2" role="tab" type="button">Accesorios</button>
             <button id="tabs-1-tab-2" class="text-gray-900 border-transparent flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium" aria-controls="tabs-1-panel-2" role="tab" type="button">Pañales</button>
@@ -49,17 +50,17 @@ const navbar = () => {
           </button>
 
           <div class="ml-4 flex lg:ml-0">
-            <a href="#">
+            <Link to='/' href="#">
               
               <h1>Pañalera Gordolitos</h1>
-              </a>
+              </Link>
           </div>
 
           <div class="hidden lg:ml-8 lg:block lg:self-stretch">
             <div class="h-full flex space-x-8">
               <div class="flex">
                 <div class="relative flex">
-                  <button type="button" class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px" aria-expanded="false">Ropa</button>
+                  <Link to='/' type="button" class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px" aria-expanded="false">Home</Link>
                 </div>
 
                 
@@ -70,7 +71,7 @@ const navbar = () => {
 
               <div class="flex">
                 <div class="relative flex">
-                  <button type="button" class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px" aria-expanded="false">Juguetes</button>
+                  <Link to='/panales' type="button" class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px" aria-expanded="false">Pañales</Link>
                 </div>
 
                 

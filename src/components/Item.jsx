@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 
 const Player = ({ player }) => {
@@ -12,6 +13,7 @@ const Player = ({ player }) => {
         alt={player.name}
         className="player-picture"
       />
+      <Link to={`/${player.id}`} > Ver más</Link>
     </div>
   );
 };
